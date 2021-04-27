@@ -21,6 +21,11 @@
 		89640BCA26386D6D00735A8F /* BudgetDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89640BC926386D6D00735A8F /* BudgetDao.swift */; };
 		89640BCC26386DBC00735A8F /* BudgetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89640BCB26386DBC00735A8F /* BudgetController.swift */; };
 		89640BCE263872FA00735A8F /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89640BCD263872FA00735A8F /* Validations.swift */; };
+		89640BD22638791000735A8F /* BudgetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89640BD02638791000735A8F /* BudgetCell.swift */; };
+		89640BD32638791000735A8F /* BudgetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89640BD12638791000735A8F /* BudgetCell.xib */; };
+		89640BDB263882BA00735A8F /* LocationField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89640BDA263882BA00735A8F /* LocationField.swift */; };
+		89640BDD263882C600735A8F /* LocationField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89640BDC263882C600735A8F /* LocationField.xib */; };
+		89640BDF2638892B00735A8F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89640BDE2638892B00735A8F /* Location.swift */; };
 		8977B38726332A0700D449F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8977B38626332A0700D449F6 /* AppDelegate.swift */; };
 		8977B38926332A0700D449F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8977B38826332A0700D449F6 /* SceneDelegate.swift */; };
 		8977B39026332A0800D449F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8977B38F26332A0800D449F6 /* Assets.xcassets */; };
@@ -101,6 +106,11 @@
 		89640BC926386D6D00735A8F /* BudgetDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetDao.swift; sourceTree = "<group>"; };
 		89640BCB26386DBC00735A8F /* BudgetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetController.swift; sourceTree = "<group>"; };
 		89640BCD263872FA00735A8F /* Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
+		89640BD02638791000735A8F /* BudgetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCell.swift; sourceTree = "<group>"; };
+		89640BD12638791000735A8F /* BudgetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BudgetCell.xib; sourceTree = "<group>"; };
+		89640BDA263882BA00735A8F /* LocationField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationField.swift; sourceTree = "<group>"; };
+		89640BDC263882C600735A8F /* LocationField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationField.xib; sourceTree = "<group>"; };
+		89640BDE2638892B00735A8F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		8977B38326332A0700D449F6 /* HabitissimoChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitissimoChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8977B38626332A0700D449F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8977B38826332A0700D449F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -241,6 +251,7 @@
 		8956EF17263760D200C98E81 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				89640BD9263882A600735A8F /* Location */,
 				8956EF1E2637686700C98E81 /* Dropdown */,
 			);
 			path = Components;
@@ -271,6 +282,24 @@
 				89640BC726386CCF00735A8F /* BaseController.h */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		89640BCF2638788100735A8F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				89640BD02638791000735A8F /* BudgetCell.swift */,
+				89640BD12638791000735A8F /* BudgetCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		89640BD9263882A600735A8F /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				89640BDA263882BA00735A8F /* LocationField.swift */,
+				89640BDC263882C600735A8F /* LocationField.xib */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 		8977B37A26332A0700D449F6 = {
@@ -457,6 +486,7 @@
 				8935D95426383516004A8018 /* Picklist */,
 				8977B426263348E600D449F6 /* Budget.swift */,
 				89DC1A80263733B000DEF0F3 /* Category.swift */,
+				89640BDE2638892B00735A8F /* Location.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -482,6 +512,7 @@
 		89DC1A822637412F00DEF0F3 /* BudgetList */ = {
 			isa = PBXGroup;
 			children = (
+				89640BCF2638788100735A8F /* Cells */,
 				8977B40E26332EC800D449F6 /* BudgetListViewController.swift */,
 				8977B40F26332EC800D449F6 /* BudgetListViewController.xib */,
 			);
@@ -556,12 +587,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89640BD32638791000735A8F /* BudgetCell.xib in Resources */,
 				8977B39326332A0800D449F6 /* LaunchScreen.storyboard in Resources */,
 				89DC1A872637419E00DEF0F3 /* BudgetDetailViewController.xib in Resources */,
 				8977B4212633420C00D449F6 /* Localizable.strings in Resources */,
 				8956EF242637689B00C98E81 /* DropdownField.xib in Resources */,
 				8977B39026332A0800D449F6 /* Assets.xcassets in Resources */,
 				8977B41126332EC800D449F6 /* BudgetListViewController.xib in Resources */,
+				89640BDD263882C600735A8F /* LocationField.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +606,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				890A2EC92636D2B90018ADE4 /* NetworkManager.swift in Sources */,
+				89640BDB263882BA00735A8F /* LocationField.swift in Sources */,
 				8977B40826332C6A00D449F6 /* NSDate+DateFunctions.m in Sources */,
 				8977B3FD26332C6A00D449F6 /* NSLocale+Neutral.m in Sources */,
 				8977B3F026332C6A00D449F6 /* AM8TableCounterDao.m in Sources */,
@@ -590,6 +624,7 @@
 				8977B3F126332C6A00D449F6 /* AM8BaseDao.m in Sources */,
 				8977B3F726332C6A00D449F6 /* NSObject+AutoMagicCoding.m in Sources */,
 				8977B38726332A0700D449F6 /* AppDelegate.swift in Sources */,
+				89640BD22638791000735A8F /* BudgetCell.swift in Sources */,
 				8977B3F426332C6A00D449F6 /* _AM8SynchroORMEntity.m in Sources */,
 				89640BC0263869DA00735A8F /* DBManager.m in Sources */,
 				8977B3EB26332C6A00D449F6 /* NSDictionary+BlocksKit.m in Sources */,
@@ -610,6 +645,7 @@
 				8977B41026332EC800D449F6 /* BudgetListViewController.swift in Sources */,
 				8977B40A26332C6A00D449F6 /* FMResultSet+Additions.m in Sources */,
 				8977B3F826332C6A00D449F6 /* AM8BaseEntity.m in Sources */,
+				89640BDF2638892B00735A8F /* Location.swift in Sources */,
 				89DC1A81263733B000DEF0F3 /* Category.swift in Sources */,
 				89640BC426386C4500735A8F /* BaseDao.m in Sources */,
 				8977B40226332C6A00D449F6 /* AM8DbEntityCache.m in Sources */,

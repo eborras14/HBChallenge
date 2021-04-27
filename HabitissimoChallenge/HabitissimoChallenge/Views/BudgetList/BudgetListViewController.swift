@@ -26,10 +26,20 @@ extension BudgetListViewController {
     
     private func setupUI() {
         
+        setupDelegates()
+        
         configureNavBar()
+        
+        registerCells()
         
         setupTableView()
                 
+    }
+    
+    private func setupDelegates() {
+        
+        viewModel.delegate = self
+        
     }
     
     private func setupTableView() {
@@ -38,11 +48,24 @@ extension BudgetListViewController {
     }
     
     private func configureNavBar() {
-        
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(newBudgetAction))
         self.title = NSLocalizedString("BudgetTitle", comment: "")
-
     }
+    
+    private func registerCells() {
+        tableView.register(BudgetCell.nib, forCellReuseIdentifier: BudgetCell.identifier)
+    }
+}
+
+// MARK: - Update methods
+
+extension BudgetListViewController {
+    
+    func updateData() {
+        viewModel.loadBudgetData()
+        tableView.reloadData()
+    }
+    
 }
 
 // MARK: - Buttons Actions
@@ -53,6 +76,14 @@ extension BudgetListViewController {
         let budget = Budget()
         let budgetDetail = BudgetDetailViewController.init(budget)
         self.navigationController?.show(budgetDetail, sender: nil)
+    }
+    
+}
+
+extension BudgetListViewController: ViewModelUtilsProtocol {
+    
+    func showViewController(_ viewController: UIViewController) {
+        self.navigationController?.show(viewController, sender: nil)
     }
     
 }

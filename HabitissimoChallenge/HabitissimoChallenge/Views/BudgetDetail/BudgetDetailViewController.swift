@@ -36,7 +36,7 @@ class BudgetDetailViewController: UIViewController {
     @IBOutlet weak var txtName: UITextField!
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPhone: UITextField!
-    @IBOutlet weak var txtLocation: UITextField!
+    @IBOutlet weak var locationField: LocationField!
     
     // MARK: Properties
     
@@ -94,9 +94,9 @@ extension BudgetDetailViewController {
             txtName.delegate = viewModel
             txtEmail.delegate = viewModel
             txtPhone.delegate = viewModel
-            txtLocation.delegate = viewModel
             categoryDropdownFieldView.delegate = viewModel
             subCategoryDrodownFieldView.delegate = viewModel
+            locationField.delegate = viewModel
         }
     }
     
@@ -106,6 +106,21 @@ extension BudgetDetailViewController {
     
     private func addSaveBtn() {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveAction))
+    }
+    
+    // MARK: Util methods
+    
+    private func getViewController(_ type: UIViewController.Type) -> UIViewController? {
+        
+        let viewControllers = navigationController?.viewControllers ?? []
+        
+        for viewController in viewControllers {
+            if viewController.isKind(of: type) {
+                return viewController
+            }
+        }
+
+       return nil
     }
     
 }
@@ -130,7 +145,7 @@ extension BudgetDetailViewController: ViewModelUtilsProtocol {
         case BudgetDetailFieldIdentifier.phoneId.rawValue:
             return txtPhone
         case BudgetDetailFieldIdentifier.locationId.rawValue:
-            return txtLocation
+            return locationField
         default:
             return nil
         }
@@ -151,7 +166,7 @@ extension BudgetDetailViewController: ViewModelUtilsProtocol {
             return BudgetDetailFieldIdentifier.emailId.rawValue
         case txtPhone:
             return BudgetDetailFieldIdentifier.phoneId.rawValue
-        case txtLocation:
+        case locationField:
             return BudgetDetailFieldIdentifier.locationId.rawValue
         default:
             return BudgetDetailFieldIdentifier.unknownId.rawValue
@@ -177,7 +192,14 @@ extension BudgetDetailViewController {
     
     @objc private func saveAction() {
         viewModel?.saveAction()
-        self.navigationController?.popViewController(animated: true)
+        navigationController?.popViewController(animated: true)
+        
+        let budgetListViewController = getViewController(BudgetListViewController.self) as? BudgetListViewController
+        
+        if let budgetListViewController = budgetListViewController {
+            budgetListViewController.updateData()
+        }
+        
     }
     
 }

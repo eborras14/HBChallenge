@@ -61,9 +61,9 @@ class BudgetDetailViewModel: NSObject, ViewModelProtocol {
         else if budget?.phoneNumber == "" {
             return NSLocalizedString("PhoneMandatoryError", comment: "")
         }
-//        else if budget?.locationName == "" {
-//            return NSLocalizedString("LocationMandatoryError", comment: "")
-//        }
+        else if budget?.locationName == "" {
+            return NSLocalizedString("LocationMandatoryError", comment: "")
+        }
         else if Validations.isValidEmail(budget?.email ?? "") == false {
             return NSLocalizedString("EmailFormatError", comment: "")
         }
@@ -80,28 +80,32 @@ class BudgetDetailViewModel: NSObject, ViewModelProtocol {
     func bindData() {
         
         //Description budget
-        let descriptionTextField = delegate?.getField(for: BudgetDetailFieldIdentifier.descriptionId.rawValue) as? UITextField
+        let descriptionTextField = delegate?.getField?(for: BudgetDetailFieldIdentifier.descriptionId.rawValue) as? UITextField
         descriptionTextField?.text = budget?.descriptionBudget
         
         //Category budget
-        let categoryView = delegate?.getField(for: BudgetDetailFieldIdentifier.categoryId.rawValue) as? DropdownField
+        let categoryView = delegate?.getField?(for: BudgetDetailFieldIdentifier.categoryId.rawValue) as? DropdownField
         categoryView?.configure(title: budget?.categoryName ?? "")
        
         //SubCategory budget
-        let subCategoryView = delegate?.getField(for: BudgetDetailFieldIdentifier.subCategoryId.rawValue) as? DropdownField
+        let subCategoryView = delegate?.getField?(for: BudgetDetailFieldIdentifier.subCategoryId.rawValue) as? DropdownField
         subCategoryView?.configure(title: budget?.subCategoryName ?? "")
         
         //Name budget
-        let nameTextField = delegate?.getField(for: BudgetDetailFieldIdentifier.nameId.rawValue) as? UITextField
+        let nameTextField = delegate?.getField?(for: BudgetDetailFieldIdentifier.nameId.rawValue) as? UITextField
         nameTextField?.text = budget?.name
         
         //Email budget
-        let emailTextField = delegate?.getField(for: BudgetDetailFieldIdentifier.emailId.rawValue) as? UITextField
+        let emailTextField = delegate?.getField?(for: BudgetDetailFieldIdentifier.emailId.rawValue) as? UITextField
         emailTextField?.text = budget?.email
         
         //Phone budget
-        let phoneTextField = delegate?.getField(for: BudgetDetailFieldIdentifier.phoneId.rawValue) as? UITextField
+        let phoneTextField = delegate?.getField?(for: BudgetDetailFieldIdentifier.phoneId.rawValue) as? UITextField
         phoneTextField?.text = budget?.phoneNumber
+        
+        //Location budget
+        let locationView = delegate?.getField?(for: BudgetDetailFieldIdentifier.locationId.rawValue) as? LocationField
+        locationView?.configure(title: budget?.locationName ?? "")
     }
     
 
@@ -118,7 +122,7 @@ extension BudgetDetailViewModel: UITextFieldDelegate {
             
            let updatedText = text.replacingCharacters(in: textRange,
                                                        with: string)
-            let identifier = delegate?.getIdentifier(for: textField)
+            let identifier = delegate?.getIdentifier?(for: textField)
             
             switch identifier {
             case BudgetDetailFieldIdentifier.descriptionId.rawValue:
@@ -151,7 +155,7 @@ extension BudgetDetailViewModel: DropdownFieldDelegate {
     
     func selectedItem(_ item: DropdownField) {
         
-        let dropdownFieldId = delegate?.getIdentifier(for: item)
+        let dropdownFieldId = delegate?.getIdentifier?(for: item)
         
         switch dropdownFieldId {
         case BudgetDetailFieldIdentifier.categoryId.rawValue:
@@ -174,7 +178,7 @@ extension BudgetDetailViewModel: DropdownFieldDelegate {
         
         switch field {
         
-        case delegate?.getField(for: BudgetDetailFieldIdentifier.categoryId.rawValue):
+        case delegate?.getField?(for: BudgetDetailFieldIdentifier.categoryId.rawValue):
             NetworkManager.shared.GETListRequest(NetworkURL.CategoriesURL.rawValue, headers: nil, parameters: nil, model: Category.self) { (categories) in
                 
                 var picklistItems: [PicklistItem] = []
@@ -191,7 +195,7 @@ extension BudgetDetailViewModel: DropdownFieldDelegate {
             
             break
             
-        case delegate?.getField(for: BudgetDetailFieldIdentifier.subCategoryId.rawValue):
+        case delegate?.getField?(for: BudgetDetailFieldIdentifier.subCategoryId.rawValue):
             
             if budget?.categoryId == "" {
                 
@@ -217,9 +221,53 @@ extension BudgetDetailViewModel: DropdownFieldDelegate {
         default:
             break
         }
-        
+    }
+}
 
+// MARK: LocationFieldDelegate
+
+extension BudgetDetailViewModel: LocationFieldDelegate {
+
+    func loadDataSource(field: LocationField, success: @escaping ([PicklistItem]) -> ()) {
+        
+        switch field {
+        
+        case delegate?.getField?(for: BudgetDetailFieldIdentifier.locationId.rawValue):
+            NetworkManager.shared.GETListRequest(NetworkURL.LocationURL.rawValue, headers: nil, parameters: nil, model: Location.self) { (locations) in
+                
+                var picklistItems: [PicklistItem] = []
+                
+                for location in locations {
+                    picklistItems.append(location.mapToPicklist())
+                }
+                
+                success(picklistItems)
+                
+            } failure: { (error) in
+                //TODO: Mostrar alerta de error
+            }
+            
+            break
+        default:
+            break
+        }
+        
     }
     
+    func selectedItem(_ item: LocationField) {
+        
+        let locationFieldId = delegate?.getIdentifier?(for: item)
+        
+        switch locationFieldId {
+        case BudgetDetailFieldIdentifier.locationId.rawValue:
+            budget?.locationName = item.selectedItem?.value ?? ""
+            break
+        default:
+            break
+        }
+        bindData()
+    }
+
     
+
 }
