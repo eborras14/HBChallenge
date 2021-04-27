@@ -1,7 +1,7 @@
 {
   "Mac" : [
     {
-      "hash" : "c049e9f09a98bee383e3bb83020552a3369268e3fef8bcadae1870713fe3b836",
+      "hash" : "e287265f56e99e2e7424b6eea4058c511814bf857276c3e46d860fc93b921542",
       "name" : "FMDB",
       "container" : "FMDB.xcframework",
       "identifier" : "macos-arm64_x86_64"
@@ -15,7 +15,7 @@
       "identifier" : "watchos-arm64_i386_x86_64-simulator"
     },
     {
-      "hash" : "92b1d88d965c6485086cb2a601b2cc138c8adc9494d6cebf12c8df803855d9d7",
+      "hash" : "9a1d17fe5503dcb3aa817b39445b75465c89024db1b3fccd32df85ab4c0ee65d",
       "name" : "FMDB",
       "container" : "FMDB.xcframework",
       "identifier" : "watchos-arm64_32_armv7k"
@@ -27,16 +27,16 @@
   "commitish" : "2.7.7",
   "iOS" : [
     {
+      "hash" : "5b992beaf0a6a121c55d6bfdbc8531387f62b2522b020df4d1d9449c9d5fd577",
+      "name" : "FMDB",
+      "container" : "FMDB.xcframework",
+      "identifier" : "ios-arm64_armv7"
+    },
+    {
       "hash" : "e8d839d6bde3bcb8885998dc219d1b9e8ed79cd3b55dfc4a8e806a776c9b65bb",
       "name" : "FMDB",
       "container" : "FMDB.xcframework",
       "identifier" : "ios-arm64_i386_x86_64-simulator"
-    },
-    {
-      "hash" : "e4909d08ec6d169db01c193986528a46bb36ac833c788f2f9969749be9a079bd",
-      "name" : "FMDB",
-      "container" : "FMDB.xcframework",
-      "identifier" : "ios-arm64_armv7"
     }
   ]
 }

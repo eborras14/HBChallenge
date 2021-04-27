@@ -48,5 +48,7 @@ typedef enum {
  */
 -(NSString *)getConcatenatedValues:(NSArray *)fields;
 
+-(NSString *)testApp;
+
 @end
 

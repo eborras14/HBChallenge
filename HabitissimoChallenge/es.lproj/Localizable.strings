@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  HabitissimoChallenge
+
+  Created by Eduard Borras Ruiz on 23/4/21.
+  
+*/
+
+"BudgetTitle" = "Presupuestos";
+"DescriptionTitle" = "Descripción";
+"CategoryTitle" = "Categoría";
+"SubCategoryTitle" = "Subcategoría";
+"NameTitle" = "Nombre";
+"EmailTitle" = "E-mail";
+"PhoneTitle" = "Teléfono";
+"LocationTitle" = "Localización";
