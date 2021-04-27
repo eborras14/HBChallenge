@@ -177,6 +177,7 @@ extension BudgetDetailViewController {
     
     @objc private func saveAction() {
         viewModel?.saveAction()
+        self.navigationController?.popViewController(animated: true)
     }
     
 }

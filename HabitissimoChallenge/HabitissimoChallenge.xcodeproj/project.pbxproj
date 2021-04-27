@@ -15,6 +15,12 @@
 		8956EF202637687F00C98E81 /* DropdownField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8956EF1F2637687F00C98E81 /* DropdownField.swift */; };
 		8956EF242637689B00C98E81 /* DropdownField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8956EF232637689B00C98E81 /* DropdownField.xib */; };
 		8956EF2626376FCD00C98E81 /* BudgetDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8956EF2526376FCD00C98E81 /* BudgetDetailViewModel.swift */; };
+		89640BC0263869DA00735A8F /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 89640BBF263869DA00735A8F /* DBManager.m */; };
+		89640BC426386C4500735A8F /* BaseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 89640BC226386C4500735A8F /* BaseDao.m */; };
+		89640BC826386CCF00735A8F /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89640BC626386CCF00735A8F /* BaseController.m */; };
+		89640BCA26386D6D00735A8F /* BudgetDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89640BC926386D6D00735A8F /* BudgetDao.swift */; };
+		89640BCC26386DBC00735A8F /* BudgetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89640BCB26386DBC00735A8F /* BudgetController.swift */; };
+		89640BCE263872FA00735A8F /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89640BCD263872FA00735A8F /* Validations.swift */; };
 		8977B38726332A0700D449F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8977B38626332A0700D449F6 /* AppDelegate.swift */; };
 		8977B38926332A0700D449F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8977B38826332A0700D449F6 /* SceneDelegate.swift */; };
 		8977B39026332A0800D449F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8977B38F26332A0800D449F6 /* Assets.xcassets */; };
@@ -86,6 +92,15 @@
 		8956EF1F2637687F00C98E81 /* DropdownField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownField.swift; sourceTree = "<group>"; };
 		8956EF232637689B00C98E81 /* DropdownField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropdownField.xib; sourceTree = "<group>"; };
 		8956EF2526376FCD00C98E81 /* BudgetDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetDetailViewModel.swift; sourceTree = "<group>"; };
+		89640BBE263869DA00735A8F /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		89640BBF263869DA00735A8F /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		89640BC226386C4500735A8F /* BaseDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDao.m; sourceTree = "<group>"; };
+		89640BC326386C4500735A8F /* BaseDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDao.h; sourceTree = "<group>"; };
+		89640BC626386CCF00735A8F /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
+		89640BC726386CCF00735A8F /* BaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
+		89640BC926386D6D00735A8F /* BudgetDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetDao.swift; sourceTree = "<group>"; };
+		89640BCB26386DBC00735A8F /* BudgetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetController.swift; sourceTree = "<group>"; };
+		89640BCD263872FA00735A8F /* Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
 		8977B38326332A0700D449F6 /* HabitissimoChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitissimoChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8977B38626332A0700D449F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8977B38826332A0700D449F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -210,6 +225,7 @@
 		8935D94F263822EF004A8018 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				89640BCD263872FA00735A8F /* Validations.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -237,6 +253,24 @@
 				8956EF232637689B00C98E81 /* DropdownField.xib */,
 			);
 			path = Dropdown;
+			sourceTree = "<group>";
+		};
+		89640BC126386C4500735A8F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				89640BC226386C4500735A8F /* BaseDao.m */,
+				89640BC326386C4500735A8F /* BaseDao.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		89640BC526386CCF00735A8F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				89640BC626386CCF00735A8F /* BaseController.m */,
+				89640BC726386CCF00735A8F /* BaseController.h */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		8977B37A26332A0700D449F6 = {
@@ -293,6 +327,8 @@
 		8977B3A026332C6A00D449F6 /* ORMWrapper */ = {
 			isa = PBXGroup;
 			children = (
+				89640BBE263869DA00735A8F /* DBManager.h */,
+				89640BBF263869DA00735A8F /* DBManager.m */,
 				8977B3A126332C6A00D449F6 /* logger */,
 				8977B3A526332C6A00D449F6 /* extensions */,
 				8977B3AE26332C6A00D449F6 /* base */,
@@ -428,6 +464,8 @@
 		8977B42B26334E2500D449F6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				89640BC526386CCF00735A8F /* Base */,
+				89640BCB26386DBC00735A8F /* BudgetController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -435,6 +473,8 @@
 		8977B42C26334E3000D449F6 /* DAO */ = {
 			isa = PBXGroup;
 			children = (
+				89640BC126386C4500735A8F /* Base */,
+				89640BC926386D6D00735A8F /* BudgetDao.swift */,
 			);
 			path = DAO;
 			sourceTree = "<group>";
@@ -542,13 +582,16 @@
 				8977B3FA26332C6A00D449F6 /* AM8TableCounter.m in Sources */,
 				8977B3EA26332C6A00D449F6 /* LoggerClient.m in Sources */,
 				8977B40326332C6A00D449F6 /* DbBackground.m in Sources */,
+				89640BC826386CCF00735A8F /* BaseController.m in Sources */,
 				89DC1A862637419E00DEF0F3 /* BudgetDetailViewController.swift in Sources */,
 				894A4BBF2636D3590062BD8E /* NetworkURL.swift in Sources */,
+				89640BCA26386D6D00735A8F /* BudgetDao.swift in Sources */,
 				8977B3ED26332C6A00D449F6 /* NSArray+BlocksKit.m in Sources */,
 				8977B3F126332C6A00D449F6 /* AM8BaseDao.m in Sources */,
 				8977B3F726332C6A00D449F6 /* NSObject+AutoMagicCoding.m in Sources */,
 				8977B38726332A0700D449F6 /* AppDelegate.swift in Sources */,
 				8977B3F426332C6A00D449F6 /* _AM8SynchroORMEntity.m in Sources */,
+				89640BC0263869DA00735A8F /* DBManager.m in Sources */,
 				8977B3EB26332C6A00D449F6 /* NSDictionary+BlocksKit.m in Sources */,
 				8977B40726332C6A00D449F6 /* AM8Db.m in Sources */,
 				8977B3FC26332C6A00D449F6 /* AM8DbPropertyCache.m in Sources */,
@@ -557,6 +600,7 @@
 				8977B40626332C6A00D449F6 /* AM8BaseRuntimeSupport.m in Sources */,
 				8977B40126332C6A00D449F6 /* AM8DbPool.m in Sources */,
 				8977B40926332C6A00D449F6 /* AM8NSExceptionDb.m in Sources */,
+				89640BCC26386DBC00735A8F /* BudgetController.swift in Sources */,
 				8977B40026332C6A00D449F6 /* NSString+Clean.m in Sources */,
 				8977B3F926332C6A00D449F6 /* AM8SynchroORMEntity.m in Sources */,
 				8977B3F626332C6A00D449F6 /* AM8EntityRuleValidation.m in Sources */,
@@ -567,12 +611,14 @@
 				8977B40A26332C6A00D449F6 /* FMResultSet+Additions.m in Sources */,
 				8977B3F826332C6A00D449F6 /* AM8BaseEntity.m in Sources */,
 				89DC1A81263733B000DEF0F3 /* Category.swift in Sources */,
+				89640BC426386C4500735A8F /* BaseDao.m in Sources */,
 				8977B40226332C6A00D449F6 /* AM8DbEntityCache.m in Sources */,
 				8977B38926332A0700D449F6 /* SceneDelegate.swift in Sources */,
 				8977B41526333AE000D449F6 /* BudgetListViewModel.swift in Sources */,
 				8977B40426332C6A00D449F6 /* DebugLog.m in Sources */,
 				8956EF202637687F00C98E81 /* DropdownField.swift in Sources */,
 				8977B3EF26332C6A00D449F6 /* NSData+AES256.m in Sources */,
+				89640BCE263872FA00735A8F /* Validations.swift in Sources */,
 				8935D94E26382040004A8018 /* ViewModelProtocol.swift in Sources */,
 				8977B3EC26332C6A00D449F6 /* NSString+Concatenate.m in Sources */,
 				8977B427263348E600D449F6 /* Budget.swift in Sources */,

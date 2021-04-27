@@ -7,15 +7,15 @@
 
 import UIKit
 
-class Budget: AM8BaseEntity {
+@objc(Budget) class Budget: AM8ORMEntity {
     
-    var descriptionBudget: String = ""
-    var categoryName: String = ""
-    var categoryId: String = ""
-    var subCategoryName: String = ""
-    var name: String = ""
-    var email: String = ""
-    var phoneNumber: String = ""
-    var locationName: String = ""
+    @objc var descriptionBudget: String = ""
+    @objc var categoryName: String = ""
+    @objc var categoryId: String = ""
+    @objc var subCategoryName: String = ""
+    @objc var name: String = ""
+    @objc var email: String = ""
+    @objc var phoneNumber: String = ""
+    @objc var locationName: String = ""
 
 }

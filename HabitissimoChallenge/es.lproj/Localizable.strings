@@ -23,3 +23,5 @@
 "LocationMandatoryError" = "La localización es obligatoria";
 "AtentionTitle" = "Atención";
 "AcceptTitle" = "Aceptar";
+"EmailFormatError" = "El formato del e-mail es incorrecto";
+"PhoneFormatError" = "El formato del teléfono es incorrecto";

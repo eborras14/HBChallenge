@@ -1,9 +1,8 @@
 //
-//  _MonsantoORMEntity.h
+//  __AM8SynchroORMEntity.h
 //  ORMWrapper
 //
 //  Created by Eduard Borras Ruiz on 1/12/2020.
-//  Copyright (c) 2020 PodoCat. All rights reserved.
 //
 
 #import "_AM8SynchroORMEntity.h"

@@ -13,3 +13,6 @@
 
 //MARK: Base Models
 #import "AM8BaseEntity.h"
+#import "DBManager.h"
+#import "BaseDao.h"
+#import "BaseController.h"

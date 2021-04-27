@@ -24,3 +24,5 @@
 "LocationMandatoryError" = "Location is mandatory";
 "AtentionTitle" = "Atention";
 "AcceptTitle" = "Accept";
+"EmailFormatError" = "Email format is incorrect";
+"PhoneFormatError" = "Phone format is incorrect";

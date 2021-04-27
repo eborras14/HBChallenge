@@ -34,7 +34,7 @@ class BudgetDetailViewModel: NSObject, ViewModelProtocol {
             delegate?.showAlert?(NSLocalizedString("AtentionTitle", comment: ""), message: validateMessage, actions: [acceptAction])
             
         }else {
-            //TODO: Guardar el presupuesto en DB
+            (BudgetController.sharedInstance() as? BudgetController)?.save(budget)
         }
         
     }
@@ -61,9 +61,16 @@ class BudgetDetailViewModel: NSObject, ViewModelProtocol {
         else if budget?.phoneNumber == "" {
             return NSLocalizedString("PhoneMandatoryError", comment: "")
         }
-        else if budget?.locationName == "" {
-            return NSLocalizedString("LocationMandatoryError", comment: "")
+//        else if budget?.locationName == "" {
+//            return NSLocalizedString("LocationMandatoryError", comment: "")
+//        }
+        else if Validations.isValidEmail(budget?.email ?? "") == false {
+            return NSLocalizedString("EmailFormatError", comment: "")
         }
+        else if Validations.isValidPhoneNumber(budget?.phoneNumber ?? "") == false {
+            return NSLocalizedString("PhoneFormatError", comment: "")
+        }
+        
         
         return nil
     }
@@ -124,9 +131,12 @@ extension BudgetDetailViewModel: UITextFieldDelegate {
                 budget?.email = updatedText
                 break
             case BudgetDetailFieldIdentifier.phoneId.rawValue:
-                //TODO: Hacer validacion solo numeros
-                budget?.phoneNumber = updatedText
-                break
+                
+                if Validations.isNumber(updatedText) == true {
+                    budget?.phoneNumber = updatedText
+                }
+                
+                return Validations.isNumber(updatedText)
             default:
                 break
             }
@@ -163,6 +173,7 @@ extension BudgetDetailViewModel: DropdownFieldDelegate {
                         success: @escaping ([PicklistItem]) -> ()) {
         
         switch field {
+        
         case delegate?.getField(for: BudgetDetailFieldIdentifier.categoryId.rawValue):
             NetworkManager.shared.GETListRequest(NetworkURL.CategoriesURL.rawValue, headers: nil, parameters: nil, model: Category.self) { (categories) in
                 
@@ -179,6 +190,7 @@ extension BudgetDetailViewModel: DropdownFieldDelegate {
             }
             
             break
+            
         case delegate?.getField(for: BudgetDetailFieldIdentifier.subCategoryId.rawValue):
             
             if budget?.categoryId == "" {
@@ -186,12 +198,12 @@ extension BudgetDetailViewModel: DropdownFieldDelegate {
                 //TODO: - Mostrar alerta
                 
             }else {
-                NetworkManager.shared.GETListRequest("\(NetworkURL.CategoriesURL.rawValue)\(budget?.categoryId ?? "")", headers: nil, parameters: nil, model: Category.self) { (categories) in
+                NetworkManager.shared.GETListRequest("\(NetworkURL.CategoriesURL.rawValue)\(budget?.categoryId ?? "")", headers: nil, parameters: nil, model: Category.self) { (subCategories) in
                     
                     var picklistItems: [PicklistItem] = []
                     
-                    for category in categories {
-                        picklistItems.append(category.mapToPicklist())
+                    for subCategory in subCategories {
+                        picklistItems.append(subCategory.mapToPicklist())
                     }
                     
                     success(picklistItems)
