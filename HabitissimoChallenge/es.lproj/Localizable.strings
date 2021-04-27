@@ -25,3 +25,4 @@
 "AcceptTitle" = "Aceptar";
 "EmailFormatError" = "El formato del e-mail es incorrecto";
 "PhoneFormatError" = "El formato del teléfono es incorrecto";
+"CategoryEmptyError" = "Debes seleccionar una categoría";

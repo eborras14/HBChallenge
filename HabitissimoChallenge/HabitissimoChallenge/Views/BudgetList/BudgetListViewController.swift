@@ -86,6 +86,16 @@ extension BudgetListViewController: ViewModelUtilsProtocol {
         self.navigationController?.show(viewController, sender: nil)
     }
     
+    func showAlert(_ title: String, message: String, actions: [UIAlertAction]) {
+        let alert = UIAlertController.init(title: title, message: message, preferredStyle: .alert)
+        
+        for action in actions {
+            alert.addAction(action)
+        }
+        
+        navigationController?.present(alert, animated: true, completion: nil)
+    }
+    
 }
 
 

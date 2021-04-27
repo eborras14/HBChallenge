@@ -26,3 +26,5 @@
 "AcceptTitle" = "Accept";
 "EmailFormatError" = "Email format is incorrect";
 "PhoneFormatError" = "Phone format is incorrect";
+"CategoryEmptyError" = "You must select a category";
+

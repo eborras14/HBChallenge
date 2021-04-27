@@ -189,8 +189,11 @@ extension BudgetDetailViewModel: DropdownFieldDelegate {
                 
                 success(picklistItems)
                 
-            } failure: { (error) in
-                //TODO: Mostrar alerta de error
+            } failure: { [unowned self] (error) in
+                
+                let acceptAction = UIAlertAction.init(title: NSLocalizedString("AcceptTitle", comment: ""), style: .default, handler: nil)
+                
+                delegate?.showAlert?(NSLocalizedString("AtentionTitle", comment: ""), message: error.localizedDescription, actions: [acceptAction])
             }
             
             break
@@ -199,7 +202,8 @@ extension BudgetDetailViewModel: DropdownFieldDelegate {
             
             if budget?.categoryId == "" {
                 
-                //TODO: - Mostrar alerta
+                let acceptAction = UIAlertAction.init(title: NSLocalizedString("AcceptTitle", comment: ""), style: .default, handler: nil)
+                delegate?.showAlert?(NSLocalizedString("AtentionTitle", comment: ""), message: NSLocalizedString("CategoryEmptyError", comment: ""), actions: [acceptAction])
                 
             }else {
                 NetworkManager.shared.GETListRequest("\(NetworkURL.CategoriesURL.rawValue)\(budget?.categoryId ?? "")", headers: nil, parameters: nil, model: Category.self) { (subCategories) in
@@ -212,8 +216,9 @@ extension BudgetDetailViewModel: DropdownFieldDelegate {
                     
                     success(picklistItems)
                     
-                } failure: { (error) in
-                    //TODO: Mostrar alerta de error
+                } failure: { [unowned self] (error) in
+                    let acceptAction = UIAlertAction.init(title: NSLocalizedString("AcceptTitle", comment: ""), style: .default, handler: nil)
+                    delegate?.showAlert?(NSLocalizedString("AtentionTitle", comment: ""), message: error.localizedDescription, actions: [acceptAction])
                 }
             }
             
@@ -243,8 +248,9 @@ extension BudgetDetailViewModel: LocationFieldDelegate {
                 
                 success(picklistItems)
                 
-            } failure: { (error) in
-                //TODO: Mostrar alerta de error
+            } failure: { [unowned self] (error) in
+                let acceptAction = UIAlertAction.init(title: NSLocalizedString("AcceptTitle", comment: ""), style: .default, handler: nil)
+                delegate?.showAlert?(NSLocalizedString("AtentionTitle", comment: ""), message: error.localizedDescription, actions: [acceptAction])
             }
             
             break
