@@ -74,6 +74,8 @@ extension BudgetDetailViewController {
         
         bindDataToView()
         
+        addSaveBtn()
+        
     }
     
     private func setupTitles() {
@@ -93,6 +95,8 @@ extension BudgetDetailViewController {
             txtEmail.delegate = viewModel
             txtPhone.delegate = viewModel
             txtLocation.delegate = viewModel
+            categoryDropdownFieldView.delegate = viewModel
+            subCategoryDrodownFieldView.delegate = viewModel
         }
     }
     
@@ -100,9 +104,15 @@ extension BudgetDetailViewController {
         viewModel?.bindData()
     }
     
+    private func addSaveBtn() {
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveAction))
+    }
+    
 }
 
-extension BudgetDetailViewController: ViewModelFieldsProtocol {
+// MARK: - ViewModelFieldsProtocol
+
+extension BudgetDetailViewController: ViewModelUtilsProtocol {
     
     func getField(for identifier: Int) -> UIView? {
         
@@ -148,5 +158,25 @@ extension BudgetDetailViewController: ViewModelFieldsProtocol {
         }
     }
     
+    func showAlert(_ title: String, message: String, actions: [UIAlertAction]) {
+        let alert = UIAlertController.init(title: title, message: message, preferredStyle: .alert)
+        
+        for action in actions {
+            alert.addAction(action)
+        }
+        
+        navigationController?.present(alert, animated: true, completion: nil)
+    }
+    
+    
+}
+
+// MARK: - Buttons Actions
+
+extension BudgetDetailViewController {
+    
+    @objc private func saveAction() {
+        viewModel?.saveAction()
+    }
     
 }

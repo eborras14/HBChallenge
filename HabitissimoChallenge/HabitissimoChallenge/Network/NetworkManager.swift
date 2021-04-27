@@ -15,7 +15,7 @@ class NetworkManager: NSObject {
     
     private override init(){}
     
-    func GETListRequest<T: Mappable>(_ url: NetworkURL,
+    func GETListRequest<T: Mappable>(_ url: String,
                     headers: [String: String]?,
                     parameters: [String: Any]?,
                     model: T.Type,
@@ -24,7 +24,7 @@ class NetworkManager: NSObject {
         
         let manager: AFHTTPSessionManager = AFHTTPSessionManager()
         manager.requestSerializer = AFHTTPRequestSerializer()
-        manager.get(url.rawValue, parameters: parameters, headers: headers, progress: nil) { (task, responseObject) in
+        manager.get(url, parameters: parameters, headers: headers, progress: nil) { (task, responseObject) in
             
             var objects: [T] = []
             let jsonResult = responseObject as? Array<Dictionary <String, AnyObject>>

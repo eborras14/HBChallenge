@@ -15,3 +15,12 @@
 "EmailTitle" = "E-mail";
 "PhoneTitle" = "Phone";
 "LocationTitle" = "Location";
+"DescriptionMandatoryError" = "Description is mandatory";
+"CategoryMandatoryError" = "Category is mandatory";
+"SubCategoryMandatoryError" = "SubCategory is mandatory";
+"NameMandatoryError" = "Name is mandatory";
+"EmailMandatoryError" = "Email is mandatory";
+"PhoneMandatoryError" = "Phone is mandatory";
+"LocationMandatoryError" = "Location is mandatory";
+"AtentionTitle" = "Atention";
+"AcceptTitle" = "Accept";

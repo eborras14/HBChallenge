@@ -8,11 +8,13 @@
 import Foundation
 import UIKit
 
-protocol ViewModelProtocol {
-    func bindData()
+@objc protocol ViewModelProtocol {
+    @objc func bindData()
 }
 
-protocol ViewModelFieldsProtocol {
+@objc protocol ViewModelUtilsProtocol {
     func getField(for identifier: Int) -> UIView?
     func getIdentifier(for field: UIView) -> Int
+    @objc optional func showAlert(_ title: String, message: String, actions: [UIAlertAction])
+
 }

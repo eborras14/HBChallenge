@@ -14,3 +14,12 @@
 "EmailTitle" = "E-mail";
 "PhoneTitle" = "Teléfono";
 "LocationTitle" = "Localización";
+"DescriptionMandatoryError" = "La descripción es obligatoria";
+"CategoryMandatoryError" = "La categoría es obligatoria";
+"SubCategoryMandatoryError" = "La subcategoría es obligatoria";
+"NameMandatoryError" = "El nombre es obligatorio";
+"EmailMandatoryError" = "El email es obligatorio";
+"PhoneMandatoryError" = "El teléfono es obligatorio";
+"LocationMandatoryError" = "La localización es obligatoria";
+"AtentionTitle" = "Atención";
+"AcceptTitle" = "Aceptar";

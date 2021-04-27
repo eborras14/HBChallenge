@@ -2,7 +2,7 @@
   "Mac" : [
     {
       "swiftToolchainVersion" : "5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)",
-      "hash" : "95c49ac89b877307b557c25cc148cc136402239a083922b768945f3a1a2dbe15",
+      "hash" : "cc70127d343ddf9568c7f366f0769c1dadd5a61d431732fb553820026353cbda",
       "name" : "ObjectMapper",
       "container" : "ObjectMapper.xcframework",
       "identifier" : "macos-arm64_x86_64"
@@ -11,14 +11,14 @@
   "watchOS" : [
     {
       "swiftToolchainVersion" : "5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)",
-      "hash" : "997a4a0b0c8a033793a08390b0373968c3a26785f20511e543297e589cab6f94",
+      "hash" : "b932b372ca402bd211d480fd705013e699747d15fe2d02fe6a74a4da7fbcfdca",
       "name" : "ObjectMapper",
       "container" : "ObjectMapper.xcframework",
       "identifier" : "watchos-arm64_i386_x86_64-simulator"
     },
     {
       "swiftToolchainVersion" : "5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)",
-      "hash" : "120fc41ebfbb92a707a7d8d758d09aabbf7e40d48107245e15277ffa64e9d3bc",
+      "hash" : "d113668b3fb2899e457cf19b8ff551369785a12208193938ef0b629d00da3395",
       "name" : "ObjectMapper",
       "container" : "ObjectMapper.xcframework",
       "identifier" : "watchos-arm64_32_armv7k"
@@ -27,31 +27,31 @@
   "tvOS" : [
     {
       "swiftToolchainVersion" : "5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)",
-      "hash" : "3176ca17e178d8807453dcb3717c05f7775c9ae72d2826514f4081355ac64287",
-      "name" : "ObjectMapper",
-      "container" : "ObjectMapper.xcframework",
-      "identifier" : "tvos-arm64_x86_64-simulator"
-    },
-    {
-      "swiftToolchainVersion" : "5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)",
-      "hash" : "9fc47a96e6d12af4e38b48f17f8c88dd7f0d7d943bf96e9a4b9c2ad35bcafbb7",
+      "hash" : "da0c9dc99b99d3bb58e87f7579c0d994e60e6777e2525164df825fcb7aa80c8c",
       "name" : "ObjectMapper",
       "container" : "ObjectMapper.xcframework",
       "identifier" : "tvos-arm64"
+    },
+    {
+      "swiftToolchainVersion" : "5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)",
+      "hash" : "6b1b183fde24d52404b11f3aea3148a9bc591c765e511be3f412da2ec711ac95",
+      "name" : "ObjectMapper",
+      "container" : "ObjectMapper.xcframework",
+      "identifier" : "tvos-arm64_x86_64-simulator"
     }
   ],
   "commitish" : "4.2.0",
   "iOS" : [
     {
       "swiftToolchainVersion" : "5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)",
-      "hash" : "4615e5f5e2b0ec6fee9eca7a5da0251d458132a86caf2f94f25f034e82643153",
+      "hash" : "72679ceaabe7a14e4c000bf79fd3dc0ff7bb11a063938b02bb7b05a09e3c1697",
       "name" : "ObjectMapper",
       "container" : "ObjectMapper.xcframework",
       "identifier" : "ios-arm64_i386_x86_64-simulator"
     },
     {
       "swiftToolchainVersion" : "5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)",
-      "hash" : "4b3cc284363549a7470dc95f18b3118d7775275cab021c0ceb8ad98b5673d34b",
+      "hash" : "b0dc197449a526786ede595f2fb38a8bccbe22dc1c592e76624eb4cd0f985657",
       "name" : "ObjectMapper",
       "container" : "ObjectMapper.xcframework",
       "identifier" : "ios-arm64_armv7"

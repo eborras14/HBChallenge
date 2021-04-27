@@ -30,5 +30,14 @@ class Category: Mappable {
 
     }
     
+    func mapToPicklist() -> PicklistItem {
+        let picklistItem = PicklistItem()
+        picklistItem.id = id
+        picklistItem.name = name
+        picklistItem.value = normalName
+        
+        return picklistItem
+    }
+    
 
 }

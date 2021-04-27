@@ -18,13 +18,6 @@ class BudgetListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        
-        NetworkManager.shared.GETListRequest(.CategoriesURL, headers: nil, parameters: nil, model: Category.self) { (categories) in
-            
-        } failure: { (error) in
-            
-        }
-
     }
 }
 
@@ -58,7 +51,6 @@ extension BudgetListViewController {
     
     @objc private func newBudgetAction() {
         let budget = Budget()
-        budget.descriptionBudget = "Prueba del seteo del budget en detalle"
         let budgetDetail = BudgetDetailViewController.init(budget)
         self.navigationController?.show(budgetDetail, sender: nil)
     }

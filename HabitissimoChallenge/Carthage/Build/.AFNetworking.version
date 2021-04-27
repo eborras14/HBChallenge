@@ -1,7 +1,7 @@
 {
   "Mac" : [
     {
-      "hash" : "506d02686f9811673ebdaa6e61c568cb296b36ed2145785e1166fa9c5a4b1987",
+      "hash" : "de3c34694834f9fd910e47d4a0546e4cac7e6cff65572db4e80bace0e747dc4f",
       "name" : "AFNetworking",
       "container" : "AFNetworking.xcframework",
       "identifier" : "macos-arm64_x86_64"
@@ -9,13 +9,13 @@
   ],
   "watchOS" : [
     {
-      "hash" : "e2c0b6307232b587f3f2a94f57bc9955309c4c8837d62e97fb9346248afde152",
+      "hash" : "ac7f3ab3295081e3acb57617c1bb8fd3cb55e2880aeee814cca198233a22a766",
       "name" : "AFNetworking",
       "container" : "AFNetworking.xcframework",
       "identifier" : "watchos-arm64_i386_x86_64-simulator"
     },
     {
-      "hash" : "d085e13e67e900e68b0d913f7199948d8559fb8e205ac9e15e0297c22fa81732",
+      "hash" : "8ab430248ad6d54ebe31f437893c950b156f3e5c9ab996354fdae8fae1962d51",
       "name" : "AFNetworking",
       "container" : "AFNetworking.xcframework",
       "identifier" : "watchos-arm64_32_armv7k"
@@ -23,28 +23,28 @@
   ],
   "tvOS" : [
     {
-      "hash" : "3fa9e241428e64312ba62ca362e107bf5e38864d29a2f262ca58187ffc52965c",
-      "name" : "AFNetworking",
-      "container" : "AFNetworking.xcframework",
-      "identifier" : "tvos-arm64"
-    },
-    {
-      "hash" : "0bb5a50d7f47347a3d6986607e224c47e7cc4b15fa286fb632722442ae1106e3",
+      "hash" : "82aed1039a34c17d0640de491c4e84d80b06774012c01f6bd90de268022dd48a",
       "name" : "AFNetworking",
       "container" : "AFNetworking.xcframework",
       "identifier" : "tvos-arm64_x86_64-simulator"
+    },
+    {
+      "hash" : "3aeddb4bd2732f6f18c0acc1b5230740b8becd3dc88f5c4220f21fb797f33ccb",
+      "name" : "AFNetworking",
+      "container" : "AFNetworking.xcframework",
+      "identifier" : "tvos-arm64"
     }
   ],
   "commitish" : "4.0.1",
   "iOS" : [
     {
-      "hash" : "5ee3ed2bf1f3ca8504f1dc2644b7bc258e287b49894b7ae6c48a56fca3d64eec",
+      "hash" : "5e4bedacdae8109873888d9f6d593e0140b99feec83e98c9c4dcdd36f07e50c9",
       "name" : "AFNetworking",
       "container" : "AFNetworking.xcframework",
       "identifier" : "ios-arm64_i386_x86_64-simulator"
     },
     {
-      "hash" : "c59f5bc3d3cec084197280c1e1c5c21470f0cdec772b440fccec192b9cdf6a18",
+      "hash" : "097b90013e9c07ec1b0faa476678e14e7b2d93e94d15eb7e545e50675f8eaefa",
       "name" : "AFNetworking",
       "container" : "AFNetworking.xcframework",
       "identifier" : "ios-arm64_armv7"

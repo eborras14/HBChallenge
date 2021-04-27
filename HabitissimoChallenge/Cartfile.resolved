@@ -1,3 +1,4 @@
 github "AFNetworking/AFNetworking" "4.0.1"
+github "AssistoLab/DropDown" "v2.3.13"
 github "ccgus/fmdb" "2.7.7"
 github "tristanhimmelman/ObjectMapper" "4.2.0"
