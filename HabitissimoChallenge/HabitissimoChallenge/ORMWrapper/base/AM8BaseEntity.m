@@ -3,7 +3,6 @@
 //  ORMWrapper
 //
 //  Created by Eduard Borras Ruiz on 1/12/2020.
-//  Copyright (c) 2020 PodoCat. All rights reserved.
 //
 
 #import "AM8BaseEntity.h"
@@ -646,29 +645,6 @@ static  NSString *_sC = @"C";
     sqlCopyStack = nil;
     return ret;
 }
-
-//TODO: Descomentar si se implementa online
-//
-//+(id)deserializeFromJSON:(NSData *)data {
-//    //    BaseEntity *entity = [string objectFromJSON:NSStringFromClass([self class]) class:[self class]];
-//    NSError *error;
-//    //    NSData* data = [string dataUsingEncoding:NSUTF8StringEncoding];
-//    NSMutableDictionary *jsonParsed = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error];
-//
-//    DCParserConfiguration *configuration = [DCParserConfiguration configuration];
-//    configuration.splitToken = _emptyString;
-//
-//    [[self class] configureDeserialize:configuration];
-//
-//    DCKeyValueObjectMapping *parser = [DCKeyValueObjectMapping mapperForClass:[self class]
-//                                                             andConfiguration:configuration];
-//
-//
-//    AM8BaseEntity *entity = [parser parseDictionary:jsonParsed];
-//
-//    return entity;
-
-
 
 -(NSString *)getConcatenatedValues:(NSArray *)fields {
     NSString *ret = _emptyString;

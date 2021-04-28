@@ -1,0 +1,28 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "v2.3.13",
+  "iOS" : [
+    {
+      "swiftToolchainVersion" : "5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)",
+      "hash" : "014aeb7ec4689417d10c97e0fb21ff8592c364109932cf252d920cb85ebdebd7",
+      "name" : "DropDown",
+      "container" : "DropDown.xcframework",
+      "identifier" : "ios-arm64_i386_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)",
+      "hash" : "d2c4d52ef786b4fbd7e313ba3beb5de19da86210e3bc7ecf796785675ac3663e",
+      "name" : "DropDown",
+      "container" : "DropDown.xcframework",
+      "identifier" : "ios-arm64_armv7"
+    }
+  ]
+}

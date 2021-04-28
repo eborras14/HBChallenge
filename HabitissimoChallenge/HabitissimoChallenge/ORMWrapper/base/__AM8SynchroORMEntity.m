@@ -1,9 +1,8 @@
 //
-//  _MonsantoORMEntity.m
+//  __AM8SynchroORMEntity.m
 //  ORMWrapper
 //
 //  Created by Eduard Borras Ruiz on 1/12/2020.
-//  Copyright (c) 2020 PodoCat. All rights reserved.
 //
 
 #import "__AM8SynchroORMEntity.h"
@@ -18,11 +17,7 @@
     RecordTypeAction laction = self.action;
     
     NSString *sql;
-    
-    
-    //    NSString *idServer = [fieldsAndValues objectForKey:@"idServer"];
-    
-    //    if(!((MonsantoORMEntity *)self).idServer){
+
     if(laction == RecordTypeInsert){
         sql = [AM8SqlGenerator getSQLDelete:[NSString stringWithFormat:_subguionTable_s,_subguion,[self tableName],_subguion_s] filters:[NSMutableArray arrayWithObject:[NSString stringWithFormat:_idEqualTo, self.Id]]];
     }
@@ -58,9 +53,6 @@
     
     NSArray *sqlArray;
     
-    //    NSString *idServer = [fieldsAndValues objectForKey:@"idServer"];
-    
-    //    if(!((MonsantoORMEntity *)self).idServer){
     if(laction == RecordTypeInsert){
         sqlArray = @[[AM8SqlGenerator getSQLDelete:[NSString stringWithFormat:_subguionTable_s,_subguion,[self tableName],_subguion_s] filters:[NSMutableArray arrayWithObject:[NSString stringWithFormat:_idEqualTo, self.Id]]]];
     }

@@ -3,7 +3,6 @@
 //  ORMWrapper
 //
 //  Created by Eduard Borras Ruiz on 1/12/2020.
-//  Copyright (c) 2020 PodoCat. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -47,6 +46,8 @@ typedef enum {
  *  @return String with concatenated values
  */
 -(NSString *)getConcatenatedValues:(NSArray *)fields;
+
+-(NSString *)testApp;
 
 @end
 

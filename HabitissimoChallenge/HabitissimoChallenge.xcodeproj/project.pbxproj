@@ -7,10 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		890A2EC92636D2B90018ADE4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890A2EC82636D2B90018ADE4 /* NetworkManager.swift */; };
+		8935D94E26382040004A8018 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8935D94D26382040004A8018 /* ViewModelProtocol.swift */; };
+		8935D95626383535004A8018 /* PicklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8935D95526383535004A8018 /* PicklistItem.swift */; };
+		894A4BBF2636D3590062BD8E /* NetworkURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894A4BBE2636D3590062BD8E /* NetworkURL.swift */; };
+		8956EF202637687F00C98E81 /* DropdownField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8956EF1F2637687F00C98E81 /* DropdownField.swift */; };
+		8956EF242637689B00C98E81 /* DropdownField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8956EF232637689B00C98E81 /* DropdownField.xib */; };
+		8956EF2626376FCD00C98E81 /* BudgetDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8956EF2526376FCD00C98E81 /* BudgetDetailViewModel.swift */; };
+		89640BC0263869DA00735A8F /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 89640BBF263869DA00735A8F /* DBManager.m */; };
+		89640BC426386C4500735A8F /* BaseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 89640BC226386C4500735A8F /* BaseDao.m */; };
+		89640BC826386CCF00735A8F /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89640BC626386CCF00735A8F /* BaseController.m */; };
+		89640BCA26386D6D00735A8F /* BudgetDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89640BC926386D6D00735A8F /* BudgetDao.swift */; };
+		89640BCC26386DBC00735A8F /* BudgetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89640BCB26386DBC00735A8F /* BudgetController.swift */; };
+		89640BCE263872FA00735A8F /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89640BCD263872FA00735A8F /* Validations.swift */; };
+		89640BD22638791000735A8F /* BudgetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89640BD02638791000735A8F /* BudgetCell.swift */; };
+		89640BD32638791000735A8F /* BudgetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89640BD12638791000735A8F /* BudgetCell.xib */; };
+		89640BDB263882BA00735A8F /* LocationField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89640BDA263882BA00735A8F /* LocationField.swift */; };
+		89640BDD263882C600735A8F /* LocationField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89640BDC263882C600735A8F /* LocationField.xib */; };
+		89640BDF2638892B00735A8F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89640BDE2638892B00735A8F /* Location.swift */; };
 		8977B38726332A0700D449F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8977B38626332A0700D449F6 /* AppDelegate.swift */; };
 		8977B38926332A0700D449F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8977B38826332A0700D449F6 /* SceneDelegate.swift */; };
-		8977B38B26332A0700D449F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8977B38A26332A0700D449F6 /* ViewController.swift */; };
-		8977B38E26332A0700D449F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8977B38C26332A0700D449F6 /* Main.storyboard */; };
 		8977B39026332A0800D449F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8977B38F26332A0800D449F6 /* Assets.xcassets */; };
 		8977B39326332A0800D449F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8977B39126332A0800D449F6 /* LaunchScreen.storyboard */; };
 		8977B3EA26332C6A00D449F6 /* LoggerClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8977B3A426332C6A00D449F6 /* LoggerClient.m */; };
@@ -45,7 +61,20 @@
 		8977B40826332C6A00D449F6 /* NSDate+DateFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8977B3E726332C6A00D449F6 /* NSDate+DateFunctions.m */; };
 		8977B40926332C6A00D449F6 /* AM8NSExceptionDb.m in Sources */ = {isa = PBXBuildFile; fileRef = 8977B3E826332C6A00D449F6 /* AM8NSExceptionDb.m */; };
 		8977B40A26332C6A00D449F6 /* FMResultSet+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8977B3E926332C6A00D449F6 /* FMResultSet+Additions.m */; };
-		8977B40C26332D2100D449F6 /* FMDB.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8977B40B26332D2100D449F6 /* FMDB.xcframework */; };
+		8977B41026332EC800D449F6 /* BudgetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8977B40E26332EC800D449F6 /* BudgetListViewController.swift */; };
+		8977B41126332EC800D449F6 /* BudgetListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8977B40F26332EC800D449F6 /* BudgetListViewController.xib */; };
+		8977B41526333AE000D449F6 /* BudgetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8977B41426333AE000D449F6 /* BudgetListViewModel.swift */; };
+		8977B4212633420C00D449F6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8977B4232633420C00D449F6 /* Localizable.strings */; };
+		8977B427263348E600D449F6 /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8977B426263348E600D449F6 /* Budget.swift */; };
+		89A58C59263946F000328855 /* DejalActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A58C57263946F000328855 /* DejalActivityView.m */; };
+		89A58C5B26394B7E00328855 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A58C5A26394B7E00328855 /* ActivityIndicator.swift */; };
+		89A58C642639675F00328855 /* AFNetworking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8977B42D2633523300D449F6 /* AFNetworking.xcframework */; };
+		89A58C652639675F00328855 /* DropDown.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8935D9522638328A004A8018 /* DropDown.xcframework */; };
+		89A58C662639675F00328855 /* FMDB.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8977B40B26332D2100D449F6 /* FMDB.xcframework */; };
+		89A58C672639675F00328855 /* ObjectMapper.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DC1A7E2637335700DEF0F3 /* ObjectMapper.xcframework */; };
+		89DC1A81263733B000DEF0F3 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DC1A80263733B000DEF0F3 /* Category.swift */; };
+		89DC1A862637419E00DEF0F3 /* BudgetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DC1A842637419E00DEF0F3 /* BudgetDetailViewController.swift */; };
+		89DC1A872637419E00DEF0F3 /* BudgetDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89DC1A852637419E00DEF0F3 /* BudgetDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,11 +91,31 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		890A2EC82636D2B90018ADE4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		8935D94D26382040004A8018 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		8935D9522638328A004A8018 /* DropDown.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DropDown.xcframework; path = Carthage/Build/DropDown.xcframework; sourceTree = "<group>"; };
+		8935D95526383535004A8018 /* PicklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicklistItem.swift; sourceTree = "<group>"; };
+		894A4BBE2636D3590062BD8E /* NetworkURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkURL.swift; sourceTree = "<group>"; };
+		8956EF1F2637687F00C98E81 /* DropdownField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownField.swift; sourceTree = "<group>"; };
+		8956EF232637689B00C98E81 /* DropdownField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropdownField.xib; sourceTree = "<group>"; };
+		8956EF2526376FCD00C98E81 /* BudgetDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetDetailViewModel.swift; sourceTree = "<group>"; };
+		89640BBE263869DA00735A8F /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		89640BBF263869DA00735A8F /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		89640BC226386C4500735A8F /* BaseDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDao.m; sourceTree = "<group>"; };
+		89640BC326386C4500735A8F /* BaseDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDao.h; sourceTree = "<group>"; };
+		89640BC626386CCF00735A8F /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
+		89640BC726386CCF00735A8F /* BaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
+		89640BC926386D6D00735A8F /* BudgetDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetDao.swift; sourceTree = "<group>"; };
+		89640BCB26386DBC00735A8F /* BudgetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetController.swift; sourceTree = "<group>"; };
+		89640BCD263872FA00735A8F /* Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
+		89640BD02638791000735A8F /* BudgetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCell.swift; sourceTree = "<group>"; };
+		89640BD12638791000735A8F /* BudgetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BudgetCell.xib; sourceTree = "<group>"; };
+		89640BDA263882BA00735A8F /* LocationField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationField.swift; sourceTree = "<group>"; };
+		89640BDC263882C600735A8F /* LocationField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationField.xib; sourceTree = "<group>"; };
+		89640BDE2638892B00735A8F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		8977B38326332A0700D449F6 /* HabitissimoChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitissimoChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8977B38626332A0700D449F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8977B38826332A0700D449F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8977B38A26332A0700D449F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8977B38D26332A0700D449F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8977B38F26332A0800D449F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8977B39226332A0800D449F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8977B39426332A0800D449F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -138,6 +187,22 @@
 		8977B3E826332C6A00D449F6 /* AM8NSExceptionDb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AM8NSExceptionDb.m; sourceTree = "<group>"; };
 		8977B3E926332C6A00D449F6 /* FMResultSet+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMResultSet+Additions.m"; sourceTree = "<group>"; };
 		8977B40B26332D2100D449F6 /* FMDB.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FMDB.xcframework; path = Carthage/Build/FMDB.xcframework; sourceTree = "<group>"; };
+		8977B40E26332EC800D449F6 /* BudgetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetListViewController.swift; sourceTree = "<group>"; };
+		8977B40F26332EC800D449F6 /* BudgetListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BudgetListViewController.xib; sourceTree = "<group>"; };
+		8977B41426333AE000D449F6 /* BudgetListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetListViewModel.swift; sourceTree = "<group>"; };
+		8977B41C263341C800D449F6 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		8977B4222633420C00D449F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8977B4242633421000D449F6 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8977B426263348E600D449F6 /* Budget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
+		8977B42A263349B300D449F6 /* HabitissimoChallenge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HabitissimoChallenge-Bridging-Header.h"; sourceTree = "<group>"; };
+		8977B42D2633523300D449F6 /* AFNetworking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AFNetworking.xcframework; path = Carthage/Build/AFNetworking.xcframework; sourceTree = "<group>"; };
+		89A58C57263946F000328855 /* DejalActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DejalActivityView.m; sourceTree = "<group>"; };
+		89A58C58263946F000328855 /* DejalActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DejalActivityView.h; sourceTree = "<group>"; };
+		89A58C5A26394B7E00328855 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		89DC1A7E2637335700DEF0F3 /* ObjectMapper.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ObjectMapper.xcframework; path = Carthage/Build/ObjectMapper.xcframework; sourceTree = "<group>"; };
+		89DC1A80263733B000DEF0F3 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		89DC1A842637419E00DEF0F3 /* BudgetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetDetailViewController.swift; sourceTree = "<group>"; };
+		89DC1A852637419E00DEF0F3 /* BudgetDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BudgetDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,17 +210,110 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8977B40C26332D2100D449F6 /* FMDB.xcframework in Frameworks */,
+				89A58C642639675F00328855 /* AFNetworking.xcframework in Frameworks */,
+				89A58C652639675F00328855 /* DropDown.xcframework in Frameworks */,
+				89A58C662639675F00328855 /* FMDB.xcframework in Frameworks */,
+				89A58C672639675F00328855 /* ObjectMapper.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		890A2EC72636D2940018ADE4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				890A2EC82636D2B90018ADE4 /* NetworkManager.swift */,
+				894A4BBE2636D3590062BD8E /* NetworkURL.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8935D94C2638202B004A8018 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8935D94D26382040004A8018 /* ViewModelProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8935D94F263822EF004A8018 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				89640BCD263872FA00735A8F /* Validations.swift */,
+				89A58C5A26394B7E00328855 /* ActivityIndicator.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8935D95426383516004A8018 /* Picklist */ = {
+			isa = PBXGroup;
+			children = (
+				8935D95526383535004A8018 /* PicklistItem.swift */,
+			);
+			path = Picklist;
+			sourceTree = "<group>";
+		};
+		8956EF17263760D200C98E81 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				89640BD9263882A600735A8F /* Location */,
+				8956EF1E2637686700C98E81 /* Dropdown */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		8956EF1E2637686700C98E81 /* Dropdown */ = {
+			isa = PBXGroup;
+			children = (
+				8956EF1F2637687F00C98E81 /* DropdownField.swift */,
+				8956EF232637689B00C98E81 /* DropdownField.xib */,
+			);
+			path = Dropdown;
+			sourceTree = "<group>";
+		};
+		89640BC126386C4500735A8F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				89640BC226386C4500735A8F /* BaseDao.m */,
+				89640BC326386C4500735A8F /* BaseDao.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		89640BC526386CCF00735A8F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				89640BC626386CCF00735A8F /* BaseController.m */,
+				89640BC726386CCF00735A8F /* BaseController.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		89640BCF2638788100735A8F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				89640BD02638791000735A8F /* BudgetCell.swift */,
+				89640BD12638791000735A8F /* BudgetCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		89640BD9263882A600735A8F /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				89640BDA263882BA00735A8F /* LocationField.swift */,
+				89640BDC263882C600735A8F /* LocationField.xib */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
 		8977B37A26332A0700D449F6 = {
 			isa = PBXGroup;
 			children = (
 				8977B38526332A0700D449F6 /* HabitissimoChallenge */,
+				8977B4232633420C00D449F6 /* Localizable.strings */,
+				8977B42A263349B300D449F6 /* HabitissimoChallenge-Bridging-Header.h */,
 				8977B38426332A0700D449F6 /* Products */,
 				8977B39B26332B8100D449F6 /* Frameworks */,
 			);
@@ -172,14 +330,20 @@
 		8977B38526332A0700D449F6 /* HabitissimoChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				8935D94F263822EF004A8018 /* Utils */,
+				8935D94C2638202B004A8018 /* Protocols */,
+				890A2EC72636D2940018ADE4 /* Network */,
+				8977B42C26334E3000D449F6 /* DAO */,
+				8977B42B26334E2500D449F6 /* Controllers */,
+				8977B425263348C000D449F6 /* Models */,
+				8977B41326333AC000D449F6 /* ViewModels */,
 				8977B40D26332DCA00D449F6 /* Views */,
 				8977B38626332A0700D449F6 /* AppDelegate.swift */,
 				8977B38826332A0700D449F6 /* SceneDelegate.swift */,
-				8977B38A26332A0700D449F6 /* ViewController.swift */,
-				8977B38C26332A0700D449F6 /* Main.storyboard */,
 				8977B38F26332A0800D449F6 /* Assets.xcassets */,
 				8977B39126332A0800D449F6 /* LaunchScreen.storyboard */,
 				8977B39426332A0800D449F6 /* Info.plist */,
+				89A58C56263946DE00328855 /* DejalActivityViewWrapper */,
 				8977B3A026332C6A00D449F6 /* ORMWrapper */,
 			);
 			path = HabitissimoChallenge;
@@ -188,6 +352,9 @@
 		8977B39B26332B8100D449F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8935D9522638328A004A8018 /* DropDown.xcframework */,
+				89DC1A7E2637335700DEF0F3 /* ObjectMapper.xcframework */,
+				8977B42D2633523300D449F6 /* AFNetworking.xcframework */,
 				8977B40B26332D2100D449F6 /* FMDB.xcframework */,
 			);
 			name = Frameworks;
@@ -196,6 +363,8 @@
 		8977B3A026332C6A00D449F6 /* ORMWrapper */ = {
 			isa = PBXGroup;
 			children = (
+				89640BBE263869DA00735A8F /* DBManager.h */,
+				89640BBF263869DA00735A8F /* DBManager.m */,
 				8977B3A126332C6A00D449F6 /* logger */,
 				8977B3A526332C6A00D449F6 /* extensions */,
 				8977B3AE26332C6A00D449F6 /* base */,
@@ -302,8 +471,77 @@
 		8977B40D26332DCA00D449F6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8956EF17263760D200C98E81 /* Components */,
+				89DC1A832637413A00DEF0F3 /* BudgetDetail */,
+				89DC1A822637412F00DEF0F3 /* BudgetList */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		8977B41326333AC000D449F6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8977B41426333AE000D449F6 /* BudgetListViewModel.swift */,
+				8956EF2526376FCD00C98E81 /* BudgetDetailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8977B425263348C000D449F6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8935D95426383516004A8018 /* Picklist */,
+				8977B426263348E600D449F6 /* Budget.swift */,
+				89DC1A80263733B000DEF0F3 /* Category.swift */,
+				89640BDE2638892B00735A8F /* Location.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8977B42B26334E2500D449F6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				89640BC526386CCF00735A8F /* Base */,
+				89640BCB26386DBC00735A8F /* BudgetController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8977B42C26334E3000D449F6 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				89640BC126386C4500735A8F /* Base */,
+				89640BC926386D6D00735A8F /* BudgetDao.swift */,
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
+		89A58C56263946DE00328855 /* DejalActivityViewWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				89A58C58263946F000328855 /* DejalActivityView.h */,
+				89A58C57263946F000328855 /* DejalActivityView.m */,
+			);
+			path = DejalActivityViewWrapper;
+			sourceTree = "<group>";
+		};
+		89DC1A822637412F00DEF0F3 /* BudgetList */ = {
+			isa = PBXGroup;
+			children = (
+				89640BCF2638788100735A8F /* Cells */,
+				8977B40E26332EC800D449F6 /* BudgetListViewController.swift */,
+				8977B40F26332EC800D449F6 /* BudgetListViewController.xib */,
+			);
+			path = BudgetList;
+			sourceTree = "<group>";
+		};
+		89DC1A832637413A00DEF0F3 /* BudgetDetail */ = {
+			isa = PBXGroup;
+			children = (
+				89DC1A842637419E00DEF0F3 /* BudgetDetailViewController.swift */,
+				89DC1A852637419E00DEF0F3 /* BudgetDetailViewController.xib */,
+			);
+			path = BudgetDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,6 +586,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 8977B37A26332A0700D449F6;
 			productRefGroup = 8977B38426332A0700D449F6 /* Products */;
@@ -364,9 +603,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89640BD32638791000735A8F /* BudgetCell.xib in Resources */,
 				8977B39326332A0800D449F6 /* LaunchScreen.storyboard in Resources */,
+				89DC1A872637419E00DEF0F3 /* BudgetDetailViewController.xib in Resources */,
+				8977B4212633420C00D449F6 /* Localizable.strings in Resources */,
+				8956EF242637689B00C98E81 /* DropdownField.xib in Resources */,
 				8977B39026332A0800D449F6 /* Assets.xcassets in Resources */,
-				8977B38E26332A0700D449F6 /* Main.storyboard in Resources */,
+				8977B41126332EC800D449F6 /* BudgetListViewController.xib in Resources */,
+				89640BDD263882C600735A8F /* LocationField.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,20 +621,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				890A2EC92636D2B90018ADE4 /* NetworkManager.swift in Sources */,
+				89640BDB263882BA00735A8F /* LocationField.swift in Sources */,
 				8977B40826332C6A00D449F6 /* NSDate+DateFunctions.m in Sources */,
 				8977B3FD26332C6A00D449F6 /* NSLocale+Neutral.m in Sources */,
+				89A58C5B26394B7E00328855 /* ActivityIndicator.swift in Sources */,
 				8977B3F026332C6A00D449F6 /* AM8TableCounterDao.m in Sources */,
+				8935D95626383535004A8018 /* PicklistItem.swift in Sources */,
 				8977B3FF26332C6A00D449F6 /* AM8ORMEntity.m in Sources */,
 				8977B3F526332C6A00D449F6 /* AM8BaseController.m in Sources */,
 				8977B3FA26332C6A00D449F6 /* AM8TableCounter.m in Sources */,
 				8977B3EA26332C6A00D449F6 /* LoggerClient.m in Sources */,
-				8977B38B26332A0700D449F6 /* ViewController.swift in Sources */,
 				8977B40326332C6A00D449F6 /* DbBackground.m in Sources */,
+				89640BC826386CCF00735A8F /* BaseController.m in Sources */,
+				89DC1A862637419E00DEF0F3 /* BudgetDetailViewController.swift in Sources */,
+				894A4BBF2636D3590062BD8E /* NetworkURL.swift in Sources */,
+				89640BCA26386D6D00735A8F /* BudgetDao.swift in Sources */,
 				8977B3ED26332C6A00D449F6 /* NSArray+BlocksKit.m in Sources */,
 				8977B3F126332C6A00D449F6 /* AM8BaseDao.m in Sources */,
 				8977B3F726332C6A00D449F6 /* NSObject+AutoMagicCoding.m in Sources */,
 				8977B38726332A0700D449F6 /* AppDelegate.swift in Sources */,
+				89640BD22638791000735A8F /* BudgetCell.swift in Sources */,
 				8977B3F426332C6A00D449F6 /* _AM8SynchroORMEntity.m in Sources */,
+				89640BC0263869DA00735A8F /* DBManager.m in Sources */,
 				8977B3EB26332C6A00D449F6 /* NSDictionary+BlocksKit.m in Sources */,
 				8977B40726332C6A00D449F6 /* AM8Db.m in Sources */,
 				8977B3FC26332C6A00D449F6 /* AM8DbPropertyCache.m in Sources */,
@@ -399,39 +652,53 @@
 				8977B40626332C6A00D449F6 /* AM8BaseRuntimeSupport.m in Sources */,
 				8977B40126332C6A00D449F6 /* AM8DbPool.m in Sources */,
 				8977B40926332C6A00D449F6 /* AM8NSExceptionDb.m in Sources */,
+				89640BCC26386DBC00735A8F /* BudgetController.swift in Sources */,
 				8977B40026332C6A00D449F6 /* NSString+Clean.m in Sources */,
 				8977B3F926332C6A00D449F6 /* AM8SynchroORMEntity.m in Sources */,
 				8977B3F626332C6A00D449F6 /* AM8EntityRuleValidation.m in Sources */,
 				8977B3FB26332C6A00D449F6 /* AM8DbSQLCache.m in Sources */,
 				8977B40526332C6A00D449F6 /* Validators.m in Sources */,
+				8956EF2626376FCD00C98E81 /* BudgetDetailViewModel.swift in Sources */,
+				8977B41026332EC800D449F6 /* BudgetListViewController.swift in Sources */,
 				8977B40A26332C6A00D449F6 /* FMResultSet+Additions.m in Sources */,
 				8977B3F826332C6A00D449F6 /* AM8BaseEntity.m in Sources */,
+				89640BDF2638892B00735A8F /* Location.swift in Sources */,
+				89DC1A81263733B000DEF0F3 /* Category.swift in Sources */,
+				89640BC426386C4500735A8F /* BaseDao.m in Sources */,
 				8977B40226332C6A00D449F6 /* AM8DbEntityCache.m in Sources */,
 				8977B38926332A0700D449F6 /* SceneDelegate.swift in Sources */,
+				8977B41526333AE000D449F6 /* BudgetListViewModel.swift in Sources */,
 				8977B40426332C6A00D449F6 /* DebugLog.m in Sources */,
+				8956EF202637687F00C98E81 /* DropdownField.swift in Sources */,
 				8977B3EF26332C6A00D449F6 /* NSData+AES256.m in Sources */,
+				89640BCE263872FA00735A8F /* Validations.swift in Sources */,
+				8935D94E26382040004A8018 /* ViewModelProtocol.swift in Sources */,
 				8977B3EC26332C6A00D449F6 /* NSString+Concatenate.m in Sources */,
+				8977B427263348E600D449F6 /* Budget.swift in Sources */,
 				8977B3F326332C6A00D449F6 /* __AM8SynchroORMEntity.m in Sources */,
+				89A58C59263946F000328855 /* DejalActivityView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8977B38C26332A0700D449F6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8977B38D26332A0700D449F6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8977B39126332A0800D449F6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8977B39226332A0800D449F6 /* Base */,
+				8977B41C263341C800D449F6 /* es */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8977B4232633420C00D449F6 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8977B4222633420C00D449F6 /* en */,
+				8977B4242633421000D449F6 /* es */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -441,6 +708,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -502,6 +770,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -565,8 +834,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eduardborrasruiz.HabitissimoChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HabitissimoChallenge-Bridging-Header.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -584,8 +856,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eduardborrasruiz.HabitissimoChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HabitissimoChallenge-Bridging-Header.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

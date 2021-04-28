@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LocationField" customModule="HabitissimoChallenge" customModuleProvider="target">
+            <connections>
+                <outlet property="removeBtnView" destination="huD-gb-Z6G" id="58Y-wx-g1G"/>
+                <outlet property="textField" destination="Nhg-sl-4Ma" id="tAM-ga-3D3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="IsD-Fe-Ibf">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1lF-qC-joC">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vAj-wI-gXZ">
+                            <rect key="frame" x="0.0" y="0.0" width="360" height="60"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nhg-sl-4Ma">
+                                    <rect key="frame" x="0.0" y="10" width="360" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="617-6d-bSW"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Nhg-sl-4Ma" secondAttribute="trailing" id="TgU-lV-use"/>
+                                <constraint firstItem="Nhg-sl-4Ma" firstAttribute="leading" secondItem="vAj-wI-gXZ" secondAttribute="leading" id="gnU-DS-hNu"/>
+                                <constraint firstItem="Nhg-sl-4Ma" firstAttribute="centerY" secondItem="vAj-wI-gXZ" secondAttribute="centerY" id="jXi-oc-MYS"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="huD-gb-Z6G">
+                            <rect key="frame" x="360" y="0.0" width="54" height="60"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEM-Av-Lya">
+                                    <rect key="frame" x="14.5" y="16.5" width="25" height="25.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="25" id="WHv-ts-7Ax"/>
+                                        <constraint firstAttribute="height" constant="25" id="yva-Gk-c2K"/>
+                                    </constraints>
+                                    <state key="normal" backgroundImage="trash" catalog="system"/>
+                                    <connections>
+                                        <action selector="removeAction:" destination="-1" eventType="touchUpInside" id="g8w-et-Bzg"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="gEM-Av-Lya" firstAttribute="centerY" secondItem="huD-gb-Z6G" secondAttribute="centerY" id="Y87-7q-PcN"/>
+                                <constraint firstItem="gEM-Av-Lya" firstAttribute="centerX" secondItem="huD-gb-Z6G" secondAttribute="centerX" id="qiY-ML-79h"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="huD-gb-Z6G" firstAttribute="width" secondItem="vAj-wI-gXZ" secondAttribute="width" multiplier="0.15" id="tK1-Z8-fTe"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="1DW-Dc-wzV"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="1lF-qC-joC" firstAttribute="leading" secondItem="1DW-Dc-wzV" secondAttribute="leading" id="W5J-lQ-98N"/>
+                <constraint firstItem="1lF-qC-joC" firstAttribute="top" secondItem="IsD-Fe-Ibf" secondAttribute="top" id="d48-NX-7Wa"/>
+                <constraint firstItem="1DW-Dc-wzV" firstAttribute="trailing" secondItem="1lF-qC-joC" secondAttribute="trailing" id="fmx-qp-gjx"/>
+                <constraint firstItem="1lF-qC-joC" firstAttribute="bottom" secondItem="1DW-Dc-wzV" secondAttribute="bottom" id="gc5-7P-gZZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="28.985507246376812" y="34.821428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="trash" catalog="system" width="121" height="128"/>
+    </resources>
+</document>

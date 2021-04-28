@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  HabitissimoChallenge
+
+  Created by Eduard Borras Ruiz on 23/4/21.
+  
+*/
+
+"BudgetTitle" = "Presupuestos";
+"DescriptionTitle" = "Descripción";
+"CategoryTitle" = "Categoría";
+"SubCategoryTitle" = "Subcategoría";
+"NameTitle" = "Nombre";
+"EmailTitle" = "E-mail";
+"PhoneTitle" = "Teléfono";
+"LocationTitle" = "Localización";
+"DescriptionMandatoryError" = "La descripción es obligatoria";
+"CategoryMandatoryError" = "La categoría es obligatoria";
+"SubCategoryMandatoryError" = "La subcategoría es obligatoria";
+"NameMandatoryError" = "El nombre es obligatorio";
+"EmailMandatoryError" = "El email es obligatorio";
+"PhoneMandatoryError" = "El teléfono es obligatorio";
+"LocationMandatoryError" = "La localización es obligatoria";
+"AtentionTitle" = "Atención";
+"AcceptTitle" = "Aceptar";
+"EmailFormatError" = "El formato del e-mail es incorrecto";
+"PhoneFormatError" = "El formato del teléfono es incorrecto";
+"CategoryEmptyError" = "Debes seleccionar una categoría";
