@@ -9,3 +9,10 @@ Este proyecto es un challenge con una POC de prueba que consiste en la creación
 
 
 # Instalación
+
+Para la instalación de este proyecto es necesario tener instalado Xcode, favorablemente XCcode en su versión 12.4 y tener instalado el gestor de dependencias Carthage (https://github.com/Carthage/Carthage). Después de tener el IDE y el gestor de dependencias puedes proceder a ejecutar un clonado del proyecto para mas adelante ejecutarlo y compilarlo.
+
+Una vez cumplas estos requisitos, puedes proceder a instalar los frameworks que anteriormente hemos explicado, ejecutando en tu terminal y en la raíz del proyecto: carthage update --use-xcframeworks .
+
+Posteriormente ya podrás compilar y ejecutar el proyecto.
+
