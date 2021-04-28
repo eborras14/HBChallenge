@@ -4,7 +4,7 @@ Este proyecto es un challenge con una POC de prueba que consiste en la creación
 
     - AFNetworking: Framework encargado para la capa de red.
     - FMDB: Framework encargado de interactuar con la base de datos local.
-    - ObjectMapper: Framework encargado de mapear los objetos recibidos del servicio y transformarlo en un objeto entendible en nuestro lenguaje, en este caso,         Swift.
+    - ObjectMapper: Framework encargado de mapear los objetos recibidos del servicio y transformarlo en un objeto entendible en nuestro lenguaje, en este caso,Swift.
     - DropDown: Framework encargado de mostrar un desplegable customizado.
 
 
