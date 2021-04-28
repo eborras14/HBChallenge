@@ -156,17 +156,19 @@ extension LocationField: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         
+        ActivityIndicator.showActivity()
+        
         delegate?.loadDataSource(field: self, success: {[unowned self] (picklistItems) in
             
             originalDataSource = picklistItems
             dataSource = picklistItems
-            //TODO: Quitar el loading
             if dataSource.count > 0 {
                 if textField.text?.count ?? 0 > 0 {
                     dropdown.dataSource = mapPicklistToStringList(dataSource)
                     dropdown.show()
                 }
-            }
+            }            
+            ActivityIndicator.hideActitvity()
         })
     }
     

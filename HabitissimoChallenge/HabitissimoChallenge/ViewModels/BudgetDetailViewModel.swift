@@ -147,6 +147,10 @@ extension BudgetDetailViewModel: UITextFieldDelegate {
         }
         return true
     }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        delegate?.hideKeyboard?()
+    }
 }
 
 // MARK: DropdownFieldDelegate
@@ -205,6 +209,8 @@ extension BudgetDetailViewModel: DropdownFieldDelegate {
                 let acceptAction = UIAlertAction.init(title: NSLocalizedString("AcceptTitle", comment: ""), style: .default, handler: nil)
                 delegate?.showAlert?(NSLocalizedString("AtentionTitle", comment: ""), message: NSLocalizedString("CategoryEmptyError", comment: ""), actions: [acceptAction])
                 
+                ActivityIndicator.hideActitvity()
+                
             }else {
                 NetworkManager.shared.GETListRequest("\(NetworkURL.CategoriesURL.rawValue)\(budget?.categoryId ?? "")", headers: nil, parameters: nil, model: Category.self) { (subCategories) in
                     
@@ -226,6 +232,10 @@ extension BudgetDetailViewModel: DropdownFieldDelegate {
         default:
             break
         }
+    }
+    
+    func hideKeyBoard() {
+        delegate?.hideKeyboard?()
     }
 }
 

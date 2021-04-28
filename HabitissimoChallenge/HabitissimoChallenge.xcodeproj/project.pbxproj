@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		890A2EC92636D2B90018ADE4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890A2EC82636D2B90018ADE4 /* NetworkManager.swift */; };
 		8935D94E26382040004A8018 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8935D94D26382040004A8018 /* ViewModelProtocol.swift */; };
-		8935D9532638328A004A8018 /* DropDown.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8935D9522638328A004A8018 /* DropDown.xcframework */; };
 		8935D95626383535004A8018 /* PicklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8935D95526383535004A8018 /* PicklistItem.swift */; };
 		894A4BBF2636D3590062BD8E /* NetworkURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894A4BBE2636D3590062BD8E /* NetworkURL.swift */; };
 		8956EF202637687F00C98E81 /* DropdownField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8956EF1F2637687F00C98E81 /* DropdownField.swift */; };
@@ -62,14 +61,17 @@
 		8977B40826332C6A00D449F6 /* NSDate+DateFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8977B3E726332C6A00D449F6 /* NSDate+DateFunctions.m */; };
 		8977B40926332C6A00D449F6 /* AM8NSExceptionDb.m in Sources */ = {isa = PBXBuildFile; fileRef = 8977B3E826332C6A00D449F6 /* AM8NSExceptionDb.m */; };
 		8977B40A26332C6A00D449F6 /* FMResultSet+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8977B3E926332C6A00D449F6 /* FMResultSet+Additions.m */; };
-		8977B40C26332D2100D449F6 /* FMDB.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8977B40B26332D2100D449F6 /* FMDB.xcframework */; };
 		8977B41026332EC800D449F6 /* BudgetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8977B40E26332EC800D449F6 /* BudgetListViewController.swift */; };
 		8977B41126332EC800D449F6 /* BudgetListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8977B40F26332EC800D449F6 /* BudgetListViewController.xib */; };
 		8977B41526333AE000D449F6 /* BudgetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8977B41426333AE000D449F6 /* BudgetListViewModel.swift */; };
 		8977B4212633420C00D449F6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8977B4232633420C00D449F6 /* Localizable.strings */; };
 		8977B427263348E600D449F6 /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8977B426263348E600D449F6 /* Budget.swift */; };
-		8977B42E2633523300D449F6 /* AFNetworking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8977B42D2633523300D449F6 /* AFNetworking.xcframework */; };
-		89DC1A7F2637335700DEF0F3 /* ObjectMapper.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DC1A7E2637335700DEF0F3 /* ObjectMapper.xcframework */; };
+		89A58C59263946F000328855 /* DejalActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A58C57263946F000328855 /* DejalActivityView.m */; };
+		89A58C5B26394B7E00328855 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A58C5A26394B7E00328855 /* ActivityIndicator.swift */; };
+		89A58C642639675F00328855 /* AFNetworking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8977B42D2633523300D449F6 /* AFNetworking.xcframework */; };
+		89A58C652639675F00328855 /* DropDown.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8935D9522638328A004A8018 /* DropDown.xcframework */; };
+		89A58C662639675F00328855 /* FMDB.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8977B40B26332D2100D449F6 /* FMDB.xcframework */; };
+		89A58C672639675F00328855 /* ObjectMapper.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DC1A7E2637335700DEF0F3 /* ObjectMapper.xcframework */; };
 		89DC1A81263733B000DEF0F3 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DC1A80263733B000DEF0F3 /* Category.swift */; };
 		89DC1A862637419E00DEF0F3 /* BudgetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DC1A842637419E00DEF0F3 /* BudgetDetailViewController.swift */; };
 		89DC1A872637419E00DEF0F3 /* BudgetDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89DC1A852637419E00DEF0F3 /* BudgetDetailViewController.xib */; };
@@ -194,6 +196,9 @@
 		8977B426263348E600D449F6 /* Budget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
 		8977B42A263349B300D449F6 /* HabitissimoChallenge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HabitissimoChallenge-Bridging-Header.h"; sourceTree = "<group>"; };
 		8977B42D2633523300D449F6 /* AFNetworking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AFNetworking.xcframework; path = Carthage/Build/AFNetworking.xcframework; sourceTree = "<group>"; };
+		89A58C57263946F000328855 /* DejalActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DejalActivityView.m; sourceTree = "<group>"; };
+		89A58C58263946F000328855 /* DejalActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DejalActivityView.h; sourceTree = "<group>"; };
+		89A58C5A26394B7E00328855 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		89DC1A7E2637335700DEF0F3 /* ObjectMapper.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ObjectMapper.xcframework; path = Carthage/Build/ObjectMapper.xcframework; sourceTree = "<group>"; };
 		89DC1A80263733B000DEF0F3 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		89DC1A842637419E00DEF0F3 /* BudgetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetDetailViewController.swift; sourceTree = "<group>"; };
@@ -205,10 +210,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8935D9532638328A004A8018 /* DropDown.xcframework in Frameworks */,
-				89DC1A7F2637335700DEF0F3 /* ObjectMapper.xcframework in Frameworks */,
-				8977B42E2633523300D449F6 /* AFNetworking.xcframework in Frameworks */,
-				8977B40C26332D2100D449F6 /* FMDB.xcframework in Frameworks */,
+				89A58C642639675F00328855 /* AFNetworking.xcframework in Frameworks */,
+				89A58C652639675F00328855 /* DropDown.xcframework in Frameworks */,
+				89A58C662639675F00328855 /* FMDB.xcframework in Frameworks */,
+				89A58C672639675F00328855 /* ObjectMapper.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				89640BCD263872FA00735A8F /* Validations.swift */,
+				89A58C5A26394B7E00328855 /* ActivityIndicator.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -337,6 +343,7 @@
 				8977B38F26332A0800D449F6 /* Assets.xcassets */,
 				8977B39126332A0800D449F6 /* LaunchScreen.storyboard */,
 				8977B39426332A0800D449F6 /* Info.plist */,
+				89A58C56263946DE00328855 /* DejalActivityViewWrapper */,
 				8977B3A026332C6A00D449F6 /* ORMWrapper */,
 			);
 			path = HabitissimoChallenge;
@@ -509,6 +516,15 @@
 			path = DAO;
 			sourceTree = "<group>";
 		};
+		89A58C56263946DE00328855 /* DejalActivityViewWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				89A58C58263946F000328855 /* DejalActivityView.h */,
+				89A58C57263946F000328855 /* DejalActivityView.m */,
+			);
+			path = DejalActivityViewWrapper;
+			sourceTree = "<group>";
+		};
 		89DC1A822637412F00DEF0F3 /* BudgetList */ = {
 			isa = PBXGroup;
 			children = (
@@ -609,6 +625,7 @@
 				89640BDB263882BA00735A8F /* LocationField.swift in Sources */,
 				8977B40826332C6A00D449F6 /* NSDate+DateFunctions.m in Sources */,
 				8977B3FD26332C6A00D449F6 /* NSLocale+Neutral.m in Sources */,
+				89A58C5B26394B7E00328855 /* ActivityIndicator.swift in Sources */,
 				8977B3F026332C6A00D449F6 /* AM8TableCounterDao.m in Sources */,
 				8935D95626383535004A8018 /* PicklistItem.swift in Sources */,
 				8977B3FF26332C6A00D449F6 /* AM8ORMEntity.m in Sources */,
@@ -659,6 +676,7 @@
 				8977B3EC26332C6A00D449F6 /* NSString+Concatenate.m in Sources */,
 				8977B427263348E600D449F6 /* Budget.swift in Sources */,
 				8977B3F326332C6A00D449F6 /* __AM8SynchroORMEntity.m in Sources */,
+				89A58C59263946F000328855 /* DejalActivityView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

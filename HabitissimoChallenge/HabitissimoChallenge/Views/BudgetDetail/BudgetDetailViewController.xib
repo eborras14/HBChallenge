@@ -206,7 +206,7 @@
                         <constraint firstItem="BGv-Fm-8CK" firstAttribute="leading" secondItem="cOb-to-OgD" secondAttribute="leading" id="Q2C-ZS-drf"/>
                         <constraint firstAttribute="trailing" secondItem="BGv-Fm-8CK" secondAttribute="trailing" id="epH-GS-o7J"/>
                         <constraint firstItem="BGv-Fm-8CK" firstAttribute="top" secondItem="cOb-to-OgD" secondAttribute="top" id="qLm-3M-zcT"/>
-                        <constraint firstAttribute="bottom" secondItem="BGv-Fm-8CK" secondAttribute="bottom" constant="60" id="sW1-4L-wa8"/>
+                        <constraint firstAttribute="bottom" secondItem="BGv-Fm-8CK" secondAttribute="bottom" constant="80" id="sW1-4L-wa8"/>
                     </constraints>
                 </scrollView>
             </subviews>

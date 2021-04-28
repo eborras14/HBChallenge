@@ -12,6 +12,7 @@ protocol DropdownFieldDelegate {
     func selectedItem(_ item: DropdownField)
     func loadDataSource(field: DropdownField,
                         success: @escaping (_ modelList: [PicklistItem]) -> ())
+    func hideKeyBoard()
 }
 
 @IBDesignable
@@ -69,11 +70,14 @@ class DropdownField: UIView {
     // MARK: Actions
     
     @objc func clickAction(sender : UITapGestureRecognizer) {
-        //TODO: Poner el loading
+        
+        delegate?.hideKeyBoard()
+        
+        ActivityIndicator.showActivity()
+        
         delegate?.loadDataSource(field: self, success: { (items) in
             
             self.dataSource = items
-            //TODO: Quitar el loading
             if self.dataSource.count > 0 {
                 let dropDown = DropDown()
                 dropDown.anchorView = self.contentView // UIView or UIBarButtonItem
@@ -86,6 +90,8 @@ class DropdownField: UIView {
                 
                 dropDown.dataSource = dataSourceValues
                 dropDown.show()
+                
+                ActivityIndicator.hideActitvity()
                 
                 dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
                     self.selectedItem = self.dataSource[index]

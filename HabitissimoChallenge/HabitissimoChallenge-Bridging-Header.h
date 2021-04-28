@@ -16,3 +16,4 @@
 #import "DBManager.h"
 #import "BaseDao.h"
 #import "BaseController.h"
+#import "DejalActivityView.h"

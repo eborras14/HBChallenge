@@ -1,7 +1,7 @@
 {
   "Mac" : [
     {
-      "hash" : "56aee253cad4f6656f56825c41fa9480744beebcf446862b30427be26bfb4e8d",
+      "hash" : "718ac8eea0f1a6e2869f5cabf20331a1d3d32ac9b189ee72d59d2dc5a0a83365",
       "name" : "FMDB",
       "container" : "FMDB.xcframework",
       "identifier" : "macos-arm64_x86_64"
@@ -9,7 +9,7 @@
   ],
   "watchOS" : [
     {
-      "hash" : "01cc8222eb5c7445dac899faea28b80f77b5c22fca847f7eadb89d907cf53745",
+      "hash" : "1bc4acc212cbce8c45724feb17f102d505763c99b615c691d10286cd1a5b5ecb",
       "name" : "FMDB",
       "container" : "FMDB.xcframework",
       "identifier" : "watchos-arm64_32_armv7k"
@@ -33,7 +33,7 @@
       "identifier" : "ios-arm64_i386_x86_64-simulator"
     },
     {
-      "hash" : "3e8853a59eed9c97fa01b8a40e16e5e76cb8961337dac3ba806676f336142c96",
+      "hash" : "24809464414ef19133f3ca18bc72d1191e463e527f5883a69ef2786af4886343",
       "name" : "FMDB",
       "container" : "FMDB.xcframework",
       "identifier" : "ios-arm64_armv7"

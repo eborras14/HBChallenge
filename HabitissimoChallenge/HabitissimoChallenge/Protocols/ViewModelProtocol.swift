@@ -17,5 +17,6 @@ import UIKit
     @objc optional func getIdentifier(for field: UIView) -> Int
     @objc optional func showAlert(_ title: String, message: String, actions: [UIAlertAction])
     @objc optional func showViewController(_ viewController: UIViewController)
+    @objc optional func hideKeyboard()
 
 }

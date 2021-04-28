@@ -183,6 +183,10 @@ extension BudgetDetailViewController: ViewModelUtilsProtocol {
         navigationController?.present(alert, animated: true, completion: nil)
     }
     
+    func hideKeyboard() {
+        self.view.endEditing(true)
+    }
+    
     
 }
 
